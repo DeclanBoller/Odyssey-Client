@@ -1,4 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: 'Rubik', sans-serif;
+  --secondary-font: 'Karla', sans-serif;
+  --purple-main: #1A023B;
+  --purple-secondary: #7126EE;
+  --purple-btn: #907FFC;
+  --text-secondary: #E2E5FF;
+  --delete: #FF0009;
+  --positive: #24B383;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
+

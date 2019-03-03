@@ -1,0 +1,38 @@
+form {
+  margin-top: 30px;
+}
+
+#origin, #destination, #search {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  border: 1.5px solid #293033;
+  background: #EFEFEF;
+  opacity: 0.9;
+}
+
+#origin {
+  border-radius: 10px 0 0 10px;
+  width: 40%;
+  border-right: none;
+}
+
+input, button {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 1em;
+}
+
+input#origin, input#destination {
+  padding-left: 15px;
+}
+
+#destination {
+  width: 40%;
+  border-right: none;
+}
+
+#search {
+  border-radius: 0 10px 10px 0;
+  width: 10%;
+}
