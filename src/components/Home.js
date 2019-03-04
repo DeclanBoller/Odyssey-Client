@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Login from './login_button';
 import Trip from './NewTrip';
 
@@ -8,7 +8,7 @@ import Twitter from '../Assets/twitter.png';
 
 import '../Component_Styles/home.css';
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <div className='home-bg'>
       <div className="icons">
@@ -24,7 +24,7 @@ const HomePage = () => {
       <div className='title'>
         <h1>odyssey</h1>
         <h3>Because It’s Not About The Destination, <span>It’s About The Journey</span></h3>
-        <Trip />
+        <Trip history={props.history} />
       </div>
     </div>
   );

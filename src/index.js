@@ -4,13 +4,15 @@ import './index.css';
 
 import App from './containers/App';
 import NewTrip from './containers/NewTrip';
+import Itinerary from './containers/Itinerary';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 const Routes = (
   <Router>
     <div>
       <Route exact path='/' component={App} />
-      <Route exact path='/new' component={NewTrip} />
+      <Route path='/new/:origin/:destination' component={NewTrip} />
+      <Route exact path='/itinerary' component={Itinerary} />
     </div>
   </Router>
 );

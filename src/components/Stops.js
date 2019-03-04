@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Component_Styles/stops.css';
+import { Link } from 'react-router-dom';
 
 const StopsList = () => {
   return (
@@ -8,7 +9,9 @@ const StopsList = () => {
         <input type="text" id="inputGoog" placeholder="Search Location..." />
         <input type="submit" id="searchGoog" />
       </div>
-      <a href="#" className='itinerary-btn'>View Itinerary</a>
+      <Link to='/itinerary'>
+        <button className='itinerary-btn'>View Itinerary</button>
+      </Link>
     </div>
   );
 };
