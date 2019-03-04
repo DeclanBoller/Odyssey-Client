@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 import App from './containers/App';
-import NewTrip from './containers/Build';
+import NewTrip from './containers/NewTrip';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
 const Routes = (

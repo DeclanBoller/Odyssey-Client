@@ -1,0 +1,59 @@
+.stops-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 275px;
+  background: var(--purple-main);
+  opacity: 0.9;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+  margin-left: 15px;
+}
+
+.searchItems {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background: var(--purple-main);
+  border-radius: 15px 15px 0 0;
+  height: 30px;
+  padding: 0 15px;
+}
+
+#inputGoog, #searchGoog {
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#inputGoog {
+  width: 80%;
+}
+
+#inputGoog::placeholder {
+  color: var(--text-secondary);
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+
+.itinerary-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-secondary);
+  background: var(--purple-secondary);
+  text-align: center;
+  bottom: 0;
+  height: 50px;
+  border-radius: 0 0 15px 15px;
+}

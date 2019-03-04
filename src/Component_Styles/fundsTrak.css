@@ -1,0 +1,53 @@
+.funds-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  background: var(--purple-main);
+  opacity: 0.9;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+  color: var(--text-secondary);
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  background: var(--positive);
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 25px;
+  padding: 5px 10px;
+  font-style: italic;
+}
+
+.balance h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.bottom {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: calc(100% - 25px);
+}
+
+.funds-container img {
+  max-height: 18px;
+}
+
+.bottom *, #fuel-cost, #activity-cost, #hotel-cost, #total-cost  {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.bottom * span {
+  margin-left: 10px;
+  font-style: italic;
+}
