@@ -1,38 +1,29 @@
-form {
-  margin-top: 30px;
+.trip-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 
-#origin, #destination, #search {
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  border: 1.5px solid #293033;
-  background: #EFEFEF;
-  opacity: 0.9;
+.left {
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+  z-index: 1;
 }
 
-#origin {
-  border-radius: 10px 0 0 10px;
-  width: 40%;
-  border-right: none;
+.right {
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+  position: absolute;
+  right: 15px;
+  top: 20px;
 }
 
-input, button {
-  font-family: var(--main-font);
-  font-weight: 300;
-  font-size: 1em;
-}
-
-input#origin, input#destination {
-  padding-left: 15px;
-}
-
-#destination {
-  width: 40%;
-  border-right: none;
-}
-
-#search {
-  border-radius: 0 10px 10px 0;
-  width: 10%;
+.map {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }

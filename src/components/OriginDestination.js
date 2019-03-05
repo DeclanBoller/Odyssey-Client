@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../Component_Styles/NewTrip.css';
+import '../Component_Styles/OriginDestination.css';
 
 class Trip extends Component {
   constructor() {
@@ -27,7 +27,7 @@ class Trip extends Component {
 
   _submitHandler(event) {
     event.preventDefault();
-    this.props.history.push(`/new/${this.state.origin}/${this.state.destination}`)
+    this.props.history.push(`/new/${this.state.origin}/${this.state.destination}`);
   };
 
   render() {

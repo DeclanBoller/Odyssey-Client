@@ -1,50 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleApiWrapper from '../components/Maps';
 import Header from '../components/Header';
-import StopsList from '../components/Stops';
+import StopsList from '../components/StopsList';
 import FundsTrak from '../components/FundsTrak';
+import '../Component_Styles/NewTrip.css';
 
-class BuildTrip extends Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <div style={{
-          display: 'flex',
-          flexDirection: 'row',
-          position: 'relative',
-        }}>
-          <div className='left' style={{
-            display: 'flex',
-            height: 'calc(100vh - 100px)',
-            alignItems: 'center',
-            zIndex: '1',
-          }}>
-            <StopsList />
-          </div>
-          <div className='right' style={{
-            height: '200px',
-            width: '200px',
-            zIndex: '1',
-            position: 'absolute',
-            right: '15px',
-            top: '20px',
-          }}>
-            <FundsTrak />
-          </div>
-          <div className="map" style={{
-            position: 'absolute',
-            top: '0',
-            height: '100%',
-            width: '100%',
-            zIndex: '0',
-          }}>
-            <GoogleApiWrapper />
-          </div>
+const BuildTrip = (props) => {
+  return (
+    <div>
+      <Header />
+      <div className='trip-container'>
+        <div className='left'>
+          <StopsList history={props.history} origin={props.match.params.origin} destination={props.match.params.destination} />
+        </div>
+        <div className='right'>
+          <FundsTrak />
+        </div>
+        <div className="map">
+          <GoogleApiWrapper />
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default BuildTrip;

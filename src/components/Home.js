@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Login from './login_button';
-import Trip from './NewTrip';
+import Trip from './OriginDestination';
 
 import Facebook from '../Assets/facebook.png';
 import Instagram from '../Assets/instagram.png';
