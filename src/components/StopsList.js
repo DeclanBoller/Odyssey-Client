@@ -30,7 +30,7 @@ class StopsList extends Component {
   }
 
   _viewItinerary(event) {
-    let SERVER_URL = 'http://localhost:3001/';
+    let SERVER_URL = 'https://odyssey-server.herokuapp.com';
 
     axios.post(`${SERVER_URL}/trips`, {
       origin: this.props.origin,

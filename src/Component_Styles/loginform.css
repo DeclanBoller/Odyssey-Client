@@ -1,0 +1,62 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px;
+  width: 600px;
+  height: 600px;
+  border-radius: 15px;
+  background: linear-gradient(to left, rgba(226, 229, 255, 0.5), rgba(226, 229, 255, 0.5)), url(../Assets/login-bg.jpg);background-position: center;
+  background-size: cover;
+  box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+h2, h3 {
+  font-family: var(--secondary-font);
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  color: var(--purple-main);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+input.login-input {
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #293033;
+  background: #EFEFEF;
+  border-radius: 5px;
+  margin: 15px 10px;
+  width: 200px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  padding-left: 10px;
+  color: rgba(26, 2, 59, 0.6);
+}
+
+.acc-btn {
+  border: 1px solid var(--purple-main);
+  border-radius: 5px;
+  height: 30px;
+  background: var(--purple-secondary);
+  color: var(--text-secondary);
+}
