@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleApiWrapper from '../components/Maps';
+import GoogleMapApi from '../components/Maps';
 import Header from '../components/Header';
 import StopsList from '../components/StopsList';
 import FundsTrak from '../components/FundsTrak';
@@ -17,7 +17,7 @@ const BuildTrip = (props) => {
           <FundsTrak />
         </div>
         <div className="map">
-          <GoogleApiWrapper />
+          <GoogleMapApi />
         </div>
       </div>
     </div>

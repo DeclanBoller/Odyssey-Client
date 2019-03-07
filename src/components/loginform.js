@@ -13,7 +13,7 @@ export default class extends Component {
             <input className='login-input' type="password" placeholder='Password...' />
             <button className='acc-btn' id='log-in-btn'>Log In</button>
           </div>
-          <button>Forgot Password</button>
+          <button id='forgot-pwd-btn'>Forgot Password?</button>
         </div>
         <div className='sign-up'>
           <h2>Create Account</h2>
@@ -28,7 +28,6 @@ export default class extends Component {
             <button className='acc-btn' id='sign-up-btn'>Create Account</button>
           </div>
         </div>
-
       </div>
     )
   }

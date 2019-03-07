@@ -3,12 +3,14 @@
   width: 100%;
   background: var(--text-secondary);
   padding: 10px 15px;
+  position: relative;
 }
 
 .stops-wrapper {
   height: 50vh;
   min-height: 300px;
   position: relative;
+  overflow: auto;
 }
 
 .stops-wrapper::after {

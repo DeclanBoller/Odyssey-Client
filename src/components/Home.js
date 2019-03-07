@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Login from './login_button';
 import Trip from './OriginDestination';
 
@@ -12,9 +12,9 @@ const HomePage = (props) => {
   return (
     <div className='home-bg'>
       <div className="icons">
-        <a href="#"> <img src={Twitter} alt=" Twitter Icon" /> </a>
-        <a href="#"> <img src={Facebook} alt="Facebook Icon" /> </a>
-        <a href="#"> <img src={Instagram} alt="Instagram Icon" /> </a>
+        <a href="https://www.twitter.com" target='_blank' rel="noopener noreferrer"> <img src={Twitter} alt=" Twitter Icon" /></a>
+        <a href="https://www.facebook.com" target='_blank' rel="noopener noreferrer"> <img src={Facebook} alt="Facebook Icon" /></a>
+        <a href="https://www.instagram.com" target='_blank' rel="noopener noreferrer"> <img src={Instagram} alt="Instagram Icon" /></a>
       </div>
 
       <div className="login">

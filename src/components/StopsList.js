@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../Component_Styles/StopsList.css';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class StopsList extends Component {
