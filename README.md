@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project 3 - Odyssey
 
-## Available Scripts
+This project is not currently deployed as it is a WIP. 
 
-In the project directory, you can run:
+The Odyssey site was produced by myself as part of WDI-30 in Sydney, Australia. It is a solo project that is helping us prepare for our future development roles. This is also a passion project of mine that will continue to be updated as my skills progress.
 
-### `npm start`
+Below is a screen shot of the landing page that the user sees upon visiting this site:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Landing Page](/images/LandingPage.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Objectives of Project 3
+- Have a backend for the project which is in Ruby on Rails
+- Have a front end that can be in React, although does not have to be.
+- This app has three models in Rails: Users, Trips and Stops
+- I have used the following Gems: 'rack-cors', 'pry-rails', 'bcrypt' and 'geocoder'.
+- Heroku: This app has been uploaded to Heroku on the backend and that is where I pull the JSON data from.
 
-### `npm test`
+## Built With
+- Ruby on Rails
+- React.js
+- JavaScript
+- HTML
+- CSS
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Below are screen shots of the different graphs that can be viewed on the site:
 
-### `npm run build`
+### Login Page
+This page allows users to Log In to an existing account or create a new account.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Login Page](/images/Login.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Add Stops
+This allows users to enter stops from the sidebar and view them as a list in order of selection
 
-### `npm run eject`
+![Add Stops](/images/StopPlanner.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Itinery Page
+This page allows users to view and modify stop information. Remove legs from the trip and view their saved trips (When Logged In).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Itinerary Page](/images/Itinerary.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Scope of Project as of 12-03-2019
+- Can Enter an Origin & Destination
+- Can add stops in between origin and destination
+- Can view stops in an itinerary
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Pain Points
+- We only had a week and this was the first time I had used React in a solo project.
+- Trying to configure Google Maps with React, finding the right package to suit my needs
+- JSON Web Tokens
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## TODO
+- Make the site mobile friendly
+- Create login functionality
+- Add form to add stop information 
+- Delete trips
+- Find Google Maps API that allows me to load the trip on the map
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Big Thanks
+A big thank you to our instructor, Joel Turnbull for his help and assistance in the project. As well as, to Linna Liu and Yianni Moustakas for your help and trouble shooting skills to guide us with some of our pain points. This project was started in March of 2019 and will continue to be developed.
